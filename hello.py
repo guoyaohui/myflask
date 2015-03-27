@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask,render_template
 from flask.ext.script import Manager
 
 app = Flask(__name__)
