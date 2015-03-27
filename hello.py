@@ -4,9 +4,8 @@ from flask.ext.script import Manager
 
 app = Flask(__name__)
 
-bootstrap = Bootstrap(app)
 manager = Manager(app)
-
+bootstrap = Bootstrap(app)
 
 @app.route('/')
 def index():
