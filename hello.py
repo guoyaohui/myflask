@@ -8,11 +8,11 @@ manager = Manager(app)
 
 @app.route('/')
 def index():
-     return '<h1>Hello World!Hello eveH<h1>'
+     return render_template('index.html')
 
 @app.route('/user/<name>')
 def user(name):
-     return '<h2>Hello Spring %s !<h2>' % name
+     return render_template('user.html' , name = name)
 
 if __name__ == '__main__':
      manager.run()
